@@ -1,8 +1,9 @@
+
 body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 80vh;
+    height: 100vh;
     margin: 0;
     background-image: url("Papel_de_parede.png");
     background-size: cover;
@@ -15,38 +16,38 @@ body {
 
 .container {
     background-color: #FFF7EA;
-    padding: 40px; 
+    padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 0 20px #FFD4A2;
+    box-shadow: 0 0 10px #FFD4A2;
     text-align: center;
-    font-size: 24px; 
+    font-size: 20px;
     border-color: 1px solid;
 }
 
 button {
     display: inline-block;
-    margin: 10px; 
-    padding: 15px 30px; 
+    margin: 5px;
+    padding: 10px 20px;
     background-color: #FF6C49;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 18px; 
 }
 
 button:hover {
     background-color: darkred;
 }
 
+
 input {
-    width: 300px; /* Aumenta a largura do input */
+    width: 200px;
     text-align: right;
-    padding: 15px; /* Aumenta o padding do input */
-    font-size: 1.5em; /* Aumenta o tamanho da fonte do input */
+    padding: 10px;
+    font-size: 1em;
     border: 1px solid #ccc;
     border-radius: 5px;
-    margin-bottom: 20px; /* Aumenta o espaço abaixo do input */
-    color: black; /* Garante que o texto seja preto */
-    background-color: white; /* Garante que o fundo do input seja branco */
+    margin-bottom: 10px;
+    color: black; 
+    background-color: white; 
 }
