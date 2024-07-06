@@ -7,13 +7,24 @@ function adicionarNumero(numero) {
 }
 
 function definirOperacao(op) {
-    valor1 = document.getElementById("input").value;
-    operacao = op;
-    document.getElementById("input").value = "";
+    if (operacao === "") {
+        valor1 = document.getElementById("input").value;
+        operacao = op;
+        document.getElementById("input").value += " " + operacao + " ";
+    } else {
+        calcularResultado();
+        valor1 = document.getElementById("input").value;
+        operacao = op;
+        document.getElementById("input").value += " " + operacao + " ";
+    }
 }
 
 function calcularResultado() {
-    valor2 = document.getElementById("input").value;
+    let displayValue = document.getElementById("input").value;
+    let partes = displayValue.split(" ");
+    valor1 = partes[0];
+    operacao = partes[1];
+    valor2 = partes[2];
     let resultado;
     switch (operacao) {
         case '+':
@@ -32,6 +43,9 @@ function calcularResultado() {
             resultado = "Erro";
     }
     document.getElementById("input").value = resultado;
+    operacao = "";
+    valor1 = "";
+    valor2 = "";
 }
 
 function limparDisplay() {
